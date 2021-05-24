@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>화면구현_평가대비연습4</title>
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        header{
+            background-color: lightgray;
+        }
+        #serach{
+            background-image: url(images/searchicon.png);
+        }
+        nav {
+    width: 100%;
+    height: 48px;
+    margin: 0 auto;
+}
+        header>nav>ul{
+            display: flex;
+            justify-content: space-between;
+            background-color: gray;           
+            
+        }
+        li{
+           width:20%;
+            list-style-type: none;
+            padding-left: 36px;
+            padding-bottom: 30px;
+        }
+        a{
+            width: 100%;
+            margin: 0 auto;
+            text-align: left;
+            text-decoration: none;
+            color: white;
+        }
+        li:hover{
+            color: orangered;
+            font-weight: 700;
+            
+            
+        }
+        a:hover{
+            color: orangered;
+        }
+        section{
+
+            width:90%;
+            height: 550px;
+            overflow: hidden;
+            float: left;
+            display: flex;
+
+        }
+        article{
+            
+            width: 100%;
+            float: left;
+            border: 1px solid gray;
+            box-sizing: border-box;
+            margin: 5px;
+            padding: 10px;
+            
+        }
+        .buy{
+            float: right;
+            display: flex;
+        }
+        footer{
+            position: absolute;
+            bottom: 0;
+            background-color: lightgray;
+            
+            width: 100%;
+            height: 70px;
+            text-align: center;      
+            
+        }
+        footer>p{
+            padding: 10px;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <a href="01_css.html">로그아웃</a>
+            상품검색<input type="text" id="search" style="background-image: url(images/searchicon.png); background-repeat: no-repeat;" placeholder="        Search.."><br>
+            <img src="images/logo.png" width="150px">
+            <nav>
+                <ul>
+                    <li><a href="#">베스트</a></li>
+                    <li><a href="#">세일중</a></li>
+                    <li><a href="#">기획전</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">스토어</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            
+            <article>
+                <h3>건조기</h3>
+                <img src="images/product-1.jpg" width="200px">
+                <p>트롬의류건조기</p>
+                <p>히트펌프식</p>
+                <p>16kg</p>
+                <p>모먼스테인레스</p>
+                <p>1,609,000원</p>
+                <button class="buy">바로 구매</button>
+                <button class="buy">장바구니</button>
+            </article>
+            <article>
+               <h3>건조기</h3>
+                <img src="images/product-2.jpg" width="200px">
+                <p>트롬의류건조기</p>
+                <p>히트펌프식</p>
+                <p>16kg</p>
+                <p>모먼스테인레스</p>
+                <p>1,609,000원</p>
+                <button class="buy">바로 구매</button>
+                <button class="buy">장바구니</button>
+            </article>
+            <article>
+                <h3>건조기</h3>
+                <img src="images/product-3.jpg" width="200px">
+                <p>트롬의류건조기</p>
+                <p>히트펌프식</p>
+                <p>16kg</p>
+                <p>모먼스테인레스</p>
+                <p>1,609,000원</p>
+                <button class="buy">바로 구매</button>
+                <button class="buy">장바구니</button>
+            </article>
+            <article>
+                <h3>건조기</h3>
+                <img src="images/product-4.jpg" width="200px">
+                <p>트롬의류건조기</p>
+                <p>히트펌프식</p>
+                <p>16kg</p>
+                <p>모먼스테인레스</p>
+                <p>1,609,000원</p>
+                <button class="buy">바로 구매</button>
+                <button class="buy">장바구니</button>
+            </article>
+            
+        </section>
+       
+        <footer>
+            <p>|회사소개 | 이용약관 | 전자금융거래약관 | 개인정보처리방침 | 고객센터</p>
+        </footer>
+    </div>
+</body>
+</html>
