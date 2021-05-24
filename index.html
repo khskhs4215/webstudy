@@ -4,155 +4,112 @@
 <head>
     <meta charset="utf-8">
     <title>화면구현_평가대비연습4</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <style>
-        header{
-            background-color: lightgray;
+        
+        
+        .btn{
+            box-sizing: border-box;
+            width: 60px;
+            height: 30px;
+            border: 1px solid lightgray;
+            background-color: crimson;
+            border-radius: 2px;
+            color: white;
+            border-color: red;
         }
-        #serach{
-            background-image: url(images/searchicon.png);
-        }
-        nav {
-    width: 100%;
-    height: 48px;
-    margin: 0 auto;
-}
-        header>nav>ul{
+        header>nav>ul{            
             display: flex;
             justify-content: space-between;
-            background-color: gray;           
-            
         }
         li{
            width:20%;
-            list-style-type: none;
-            padding-left: 36px;
-            padding-bottom: 30px;
+           list-style-type: none;
+           padding-left: 36px;
+           padding-bottom: 30px;
         }
         a{
             width: 100%;
             margin: 0 auto;
-            text-align: left;
+            text-align: center;
             text-decoration: none;
-            color: white;
+            color: black;
         }
         li:hover{
-            color: orangered;
-            font-weight: 700;
-            
-            
+            color: red;
+            font-weight: 700
         }
         a:hover{
-            color: orangered;
+            color: blue;
         }
         section{
-
-            width:90%;
-            height: 550px;
-            overflow: hidden;
-            float: left;
-            display: flex;
-
-        }
-        article{
-            
-            width: 100%;
-            float: left;
-            border: 1px solid gray;
-            box-sizing: border-box;
-            margin: 5px;
-            padding: 10px;
-            
-        }
-        .buy{
-            float: right;
-            display: flex;
-        }
-        footer{
-            position: absolute;
-            bottom: 0;
             background-color: lightgray;
-            
-            width: 100%;
-            height: 70px;
-            text-align: center;      
-            
+            width:100%;
+            height: 90%;
+            overflow: hidden;
+            float: none;
+
         }
-        footer>p{
-            padding: 10px;
-            
-            
+        article{            
+            width: 50%;            
+            border: none;
+            box-sizing: border-box;
+            margin: 0 auto;
+            padding: 10px;            
+            text-align: center;            
         }
+        
     </style>
 </head>
 <body>
     <div>
-        <header>
-            <a href="01_css.html">로그아웃</a>
-            상품검색<input type="text" id="search" style="background-image: url(images/searchicon.png); background-repeat: no-repeat;" placeholder="        Search.."><br>
-            <img src="images/logo.png" width="150px">
+        <header>            
+            <h1 style="color: red">KOREA</h1>
+            <form name="a">
+                <i class="fas fa-search"></i>
+		<input type="text" name="b">		
+		<input type="button" class="btn" value="검색" onclick="search()"> 
+	</form>
+            
+            
             <nav>
                 <ul>
-                    <li><a href="#">베스트</a></li>
-                    <li><a href="#">세일중</a></li>
-                    <li><a href="#">기획전</a></li>
-                    <li><a href="#">이벤트</a></li>
-                    <li><a href="#">스토어</a></li>
+                    <li><a href="#">소개</a></li>
+                    <li><a href="#">교육과정</a></li>
+                    <li><a href="#">국비지원</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                    <li><a href="#">프로젝트</a></li>
+                    <li><a href="#">취업지원</a></li>
+                    <li><a href="#">고객상담</a></li>
+                    <li><a href="#">수강료</a></li>
                 </ul>
             </nav>
+            <img src="D:\SPRING0303\webstudy\CSS\images\banner.jpg">
         </header>
         <section>
             
             <article>
-                <h3>건조기</h3>
-                <img src="images/product-1.jpg" width="200px">
-                <p>트롬의류건조기</p>
-                <p>히트펌프식</p>
-                <p>16kg</p>
-                <p>모먼스테인레스</p>
-                <p>1,609,000원</p>
-                <button class="buy">바로 구매</button>
-                <button class="buy">장바구니</button>
-            </article>
-            <article>
-               <h3>건조기</h3>
-                <img src="images/product-2.jpg" width="200px">
-                <p>트롬의류건조기</p>
-                <p>히트펌프식</p>
-                <p>16kg</p>
-                <p>모먼스테인레스</p>
-                <p>1,609,000원</p>
-                <button class="buy">바로 구매</button>
-                <button class="buy">장바구니</button>
-            </article>
-            <article>
-                <h3>건조기</h3>
-                <img src="images/product-3.jpg" width="200px">
-                <p>트롬의류건조기</p>
-                <p>히트펌프식</p>
-                <p>16kg</p>
-                <p>모먼스테인레스</p>
-                <p>1,609,000원</p>
-                <button class="buy">바로 구매</button>
-                <button class="buy">장바구니</button>
-            </article>
-            <article>
-                <h3>건조기</h3>
-                <img src="images/product-4.jpg" width="200px">
-                <p>트롬의류건조기</p>
-                <p>히트펌프식</p>
-                <p>16kg</p>
-                <p>모먼스테인레스</p>
-                <p>1,609,000원</p>
-                <button class="buy">바로 구매</button>
-                <button class="buy">장바구니</button>
-            </article>
-            
+                <h1>프로젝트 Let'sPorts</h1>
+                <h4>코리아IT아카데미 | 신촌지점</h4>
+                <hr>
+                (디지털컨버전스)스프링프레임워크 기반 풀스택 개발자 양성과정
+                <img src="D:\SPRING0303\webstudy\CSS\images\article.jpg" style="max-width: 100%; height: auto;">
+                <p>Let'sPrts는 다양한 취향과 운동을 취미로 가진 사람들이 모여서 운동으로 소통하면서 만남을 가질 수 있는 커뮤니티 웹사이트이다. 로그인 및 회원가입시 이메일 인증을 사용하고, 게시판에 질문글을 올릴 수 있고 해당 질문의 해결완료 여부를 함께 표시할 수 있다. 카카오나 페이스북과 같은 소셜 로그인이 가능하고, 회원이라면 누구나 모임을 개설하고 다른 모임에 참여할 수 있다. 취향에 따라 원하는 모임을 검색할 수 있고, ajax 댓글 기능을 지원한다. 카카오 지도 API와 연동되기 때문에 지도에서 위치를 선택하면 자동으로 주소를 입력해 줄 수 있다. Spring Tool suite를 IDE로 사용하고 Java, HTML, CSS, JavaScript, JSP, Spring Framework를 사용하였으며 데이터베이스로 Oracle과 Mybatis Framework를 사용하였다.</p>
+            </article>            
         </section>
        
-        <footer>
-            <p>|회사소개 | 이용약관 | 전자금융거래약관 | 개인정보처리방침 | 고객센터</p>
-        </footer>
     </div>
+    <script>
+		function search() {
+			var a = document.forms.a;
+			var b = a.b;
+			if (b.value == '') {
+				alert('검색어를 입력하세요.');
+				b.focus();
+				return;
+			}
+			a.submit(); 
+		}
+	</script>
 </body>
 </html>
